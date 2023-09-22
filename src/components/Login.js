@@ -23,6 +23,12 @@ function Login() {
     const [loginx1, setLoginx] = useState({ email: "", pass: "" })
     const [validx1, setValid1] = useState({ emailval: "", passval: "" })
     const [selectuser, setUser] = useState("u");
+    const [errorValid, setErrror] = useState(false);
+    const [successValid, setSuccess] = useState(false);
+
+    const delay = ms => new Promise(
+        resolve => setTimeout(resolve, ms)
+      );
 
     var OnTextChanged = (args) => {
         var copyoflogin = { ...loginx1 };
@@ -84,7 +90,7 @@ function Login() {
         else{
             userService
             .LoginME(userData)
-            .then(response => {
+            .then(async response => {
                 console.log(response.data)
                 if (response.data.length == 1) {
                     window.localStorage.setItem("isUserLoggedIn", "true");
@@ -101,10 +107,13 @@ function Login() {
                     window.localStorage.setItem("country", response.data[0].country);
                     window.localStorage.setItem("mobile", response.data[0].mobile);
                     if (response.data[0].type != "u") {
+                        
                         const root = ReactDOM.createRoot(document.getElementById('root'));
                         root.render(<Artist></Artist>);
                     }
                     else {
+                        setSuccess(true);
+                         await delay(2000);
                         history.push("/home");
                         history.go("/home");
                     }
@@ -112,6 +121,9 @@ function Login() {
                 }
 
                 else {
+                    setErrror(true);
+                    await delay(2000);
+                    setErrror(false);
                     console.log('Not OK');
                 }
             })
@@ -147,6 +159,19 @@ function Login() {
 
                     <p style={{ marginTop: "-25px", textAlign: "right", color: "dimgrey" }} onClick={() => { history.push("/forget") }}>Forgot Password ? </p>
 
+                    <div>
+                        {errorValid && (
+                            <div class="alert alert-danger" role="alert" style={{ marginTop: "50px" }}>
+                                Sorry, the credentials are not correct!!!!!!
+                            </div>
+                        )}
+
+                        {successValid && (
+                            <div class="alert alert-success" role="alert" style={{ marginTop: "50px" }}>
+                                Wait For Enjoy Auctioning
+                            </div>
+                        )}
+                    </div>
 
                     <input type="button" value="SUBMIT" className="submitx" onClick={onSubmit} />
 
