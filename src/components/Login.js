@@ -106,7 +106,7 @@ function Login() {
                     }
                     else {
                         history.push("/home");
-                        history.go("/home");
+                        //history.go("/home");
                     }
 
                 }
