@@ -1,0 +1,49 @@
+.pagehead
+{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.details
+{
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+.base
+{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.bprice
+{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+    color: chocolate;
+    border: 20px;
+    border-width: 10px;
+    border-radius: 5px;
+    border-color: brown;
+}
+.bdatils
+{
+    font-weight: bold;
+    font-size:20px;
+}
+.btext
+{
+    font-size:18px;
+}
+.similar
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size:30px;
+    font-style: italic;
+    text-decoration:underline;
+}

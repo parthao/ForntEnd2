@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'myFontx';
+    src: local('myFontx'),
+    url('../fonts/natraj.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myWelcome';
+    src: local('myWelcome'),
+    url('../fonts/welcome.ttf') format('truetype');
+}

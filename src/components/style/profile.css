@@ -1,0 +1,54 @@
+.myacc2 {
+    color: #000000;
+    font-family: 'Droid serif', serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-decoration: underline;
+    font-style: italic;
+    line-height: 44px;
+}
+
+.maintabdiv {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.mytab {
+    /* width: 20%; */
+    margin-bottom: 20px;
+    border-radius: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-color: #B0724A;
+    cursor: pointer;
+}
+.mytab:hover
+{
+    border-color: #ff3300;
+    border-width: 5px;
+    font-size: 25px;
+
+    
+}
+
+.forimg {
+    height: 90px;
+    width: 90px;
+}
+
+.labeling {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #B0724A;
+}
+

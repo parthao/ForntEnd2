@@ -1,0 +1,21 @@
+.bar
+{
+    height: 45px;
+    background: linear-gradient(180deg, #C49C58 0%, #B0734A 100%);
+}
+
+.textx
+{
+padding-top: 10px;
+color: #FFFFFF;
+width: 110px;
+font-weight: 500;
+}
+.coming
+{
+padding-top: 10px;
+margin-left: -50px;
+color: #FFFFFF;
+width: 150px;
+font-weight: 500;
+}

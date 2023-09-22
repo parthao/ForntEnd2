@@ -1,0 +1,28 @@
+.adminProfile{
+    
+    background-color: #C49C58;
+    border-radius: 20px;
+}
+
+.adminlogo{
+    width: 200px;
+    height: 200px;
+}
+
+.adminText
+{
+    margin-top: 75px;
+    font-family: myWelcome;
+    color: white;
+    font-size: 30px;
+}
+
+.LogoutText
+{
+    
+    font-family:myWelcome; 
+    color: white;
+    font-size: 25px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+
+
+.minhead {
+    font-family: myFontx;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.headx {
+    /* font-family: myFontx; */
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.logofont {
+    margin-top: 38px;
+    font-family: myFontx;
+    font-size: 30px;
+    line-height: 25px;
+}

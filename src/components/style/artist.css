@@ -1,0 +1,77 @@
+.logo{
+    margin-top: -20px;
+    width: 250px;
+    height: 250px;
+}
+
+.back{
+    background-color: #C49C58;
+}
+.headd
+{
+    font-family: myWelcome;
+    color: white;
+    font-size: 30px;
+    
+}
+.linkx
+{
+    text-decoration: none;
+}
+
+
+.smtext
+{
+    color: white;
+    
+    font-family:'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight: bold; 
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.smtext:hover
+{
+    color: white;
+    background-color: rgba(8, 20, 131, 0.473);
+    padding: 5px; 
+    
+    margin-left: 40px;
+    border-radius: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight: bold; 
+    font-size: 18px;
+    cursor: pointer;
+}
+.smtext:active
+{
+    color: white;
+   
+    padding: 5px; 
+    margin-left: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgba(8, 20, 131, 0.473);
+    font-family:'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight: bold; 
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.smlogo
+{
+   
+    width: 25px;
+    height: 25px;
+}
+.profile
+{
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.171);
+}
