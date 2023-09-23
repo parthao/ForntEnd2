@@ -14,19 +14,17 @@ const EmailMe = (data) => {
 };
 
 
-// const create = (data) => {
-//   return httpClient.post('/api/Product', data);
-// };
+const OTPME = (data) => {
+  return httpClient.put('/api/OTPMatch',data);//http://localhost:8080/employees
+};
 
-// const get = (id) => {
-//   return httpClient.get(`${id}`);
-// };
+const ForgetME = (data) => {
+  return httpClient.post('/api/ForgetPass',data);//http://localhost:8080/employees
+};
 
-// const update = (data) => {
-//   return httpClient.put('', data);
-// };
+const AllUser = () => {
+  return httpClient.get('/api/UserEmail');//http://localhost:8080/employees
+};
 
-// const remove = (id) => {
-//   return httpClient.delete(`/delSingle/${id}`);
-// };
-export default { LoginME,RegisMe,EmailMe};
+
+export default { AllUser,OTPME,ForgetME, LoginME,RegisMe,EmailMe};
